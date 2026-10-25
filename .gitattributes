@@ -1,0 +1,6 @@
+# Windows scripts are stored byte-for-byte with CRLF: cmd.exe and Windows
+# PowerShell 5.1 misparse LF-only files. -text keeps Archive/ZIP downloads intact.
+*.bat -text
+*.ps1 -text
+*.vbs -text
+*.sh text eol=lf

@@ -1,0 +1,16 @@
+# 依赖与运行时数据
+server/node_modules/
+server/data/
+
+# 便携版 Node（install.bat 自动下载）
+tools/
+
+# Android 构建产物与签名
+android/build/
+android/keystore.jks
+android/musicremote.apk
+
+# 系统杂项
+Thumbs.db
+.DS_Store
+*.log

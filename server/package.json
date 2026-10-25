@@ -1,0 +1,16 @@
+{
+  "name": "netease-remote-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bridge server for Netease Cloud Music remote control",
+  "main": "bridge.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node bridge.js"
+  },
+  "dependencies": {
+    "@neteasecloudmusicapienhanced/api": "^4.41.1",
+    "qrcode": "^1.5.4",
+    "ws": "^8.22.0"
+  }
+}
