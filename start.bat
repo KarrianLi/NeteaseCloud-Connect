@@ -15,7 +15,9 @@ if errorlevel 1 (
 )
 
 set "CLIENT="
-set "TMPF=%TEMP%\netease_remote_client.txt"
+set "CDATA=%~dp0server\data"
+if not exist "%CDATA%" mkdir "%CDATA%" >nul 2>&1
+set "TMPF=%CDATA%\nc_client.txt"
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0find-client.ps1" > "%TMPF%" 2>nul
 if exist "%TMPF%" set /p CLIENT=<"%TMPF%"
 del "%TMPF%" >nul 2>&1
